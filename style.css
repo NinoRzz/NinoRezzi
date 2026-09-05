@@ -36,7 +36,9 @@ html {
 
 
 body {
+
     background: var(--background);
+
     color: var(--text);
 
     font-family: "Inter", sans-serif;
@@ -54,13 +56,17 @@ a {
 
 
 img {
+
     display: block;
+
     width: 100%;
 }
 
 
 ::selection {
+
     background: var(--accent);
+
     color: var(--background-dark);
 }
 
@@ -86,6 +92,7 @@ img {
     position: absolute;
 
     top: 150px;
+
     left: 40px;
 
     color: var(--text-muted);
@@ -159,6 +166,7 @@ img {
     z-index: 100;
 
     top: 0;
+
     left: 0;
 
     width: 100%;
@@ -206,8 +214,6 @@ img {
 
 
 .navbar nav a {
-
-    position: relative;
 
     color: var(--text-muted);
 
@@ -403,24 +409,6 @@ img {
 }
 
 
-.hero-image::after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: linear-gradient(
-        180deg,
-        transparent 65%,
-        rgba(8, 20, 34, 0.5)
-    );
-
-    pointer-events: none;
-}
-
-
 .hero-image img {
 
     width: 100%;
@@ -450,6 +438,7 @@ img {
     bottom: 20px;
 
     left: 20px;
+
     right: 20px;
 
     display: flex;
@@ -587,9 +576,85 @@ img {
 }
 
 
-.projects-grid {
+/* =====================================================
+   CATÉGORIES DE PROJETS
+===================================================== */
+
+.project-category-section {
 
     margin-left: 150px;
+
+    margin-bottom: 130px;
+}
+
+
+.project-category-section:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* En-tête de chaque catégorie */
+
+.project-category-header {
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+
+    column-gap: 25px;
+
+    margin-bottom: 55px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.project-category-header > span {
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+}
+
+
+.project-category-header h3 {
+
+    font-size: 36px;
+
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+
+    line-height: 1;
+}
+
+
+.project-category-header p {
+
+    grid-column: 2;
+
+    max-width: 520px;
+
+    margin-top: 12px;
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   GRILLE PROJETS
+===================================================== */
+
+.projects-grid {
 
     display: grid;
 
@@ -1139,6 +1204,7 @@ footer a:hover {
 
 @media (max-width: 1000px) {
 
+
     .navbar nav {
         display: none;
     }
@@ -1161,7 +1227,6 @@ footer a:hover {
 
 
     .scroll-indicator {
-
         display: none;
     }
 
@@ -1182,7 +1247,7 @@ footer a:hover {
 
     .section-header,
     .about-grid,
-    .projects-grid,
+    .project-category-section,
     .timeline,
     .software-grid,
     .objectives-grid {
@@ -1237,6 +1302,7 @@ footer a:hover {
 
         align-items: flex-start;
     }
+
 }
 
 
@@ -1245,6 +1311,7 @@ footer a:hover {
 ===================================================== */
 
 @media (max-width: 600px) {
+
 
     .navbar {
 
@@ -1326,6 +1393,36 @@ footer a:hover {
     }
 
 
+    .project-category-section {
+
+        margin-bottom: 90px;
+    }
+
+
+    .project-category-header {
+
+        grid-template-columns: 40px 1fr;
+
+        column-gap: 15px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .project-category-header h3 {
+
+        font-size: 28px;
+    }
+
+
+    .project-category-header p {
+
+        grid-column: 2;
+
+        font-size: 12px;
+    }
+
+
     .timeline-item {
 
         display: block;
@@ -1402,4 +1499,5 @@ footer a:hover {
 
         gap: 10px;
     }
+
 }
