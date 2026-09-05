@@ -56,17 +56,13 @@ a {
 
 
 img {
-
     display: block;
-
     width: 100%;
 }
 
 
 ::selection {
-
     background: var(--accent);
-
     color: var(--background-dark);
 }
 
@@ -87,23 +83,7 @@ img {
 }
 
 
-.section-number {
-
-    position: absolute;
-
-    top: 150px;
-
-    left: 40px;
-
-    color: var(--text-muted);
-
-    font-size: 11px;
-}
-
-
 .section-header {
-
-    margin-left: 150px;
 
     margin-bottom: 80px;
 }
@@ -166,7 +146,6 @@ img {
     z-index: 100;
 
     top: 0;
-
     left: 0;
 
     width: 100%;
@@ -200,7 +179,6 @@ img {
 
 
 .logo span {
-
     color: var(--accent);
 }
 
@@ -224,7 +202,6 @@ img {
 
 
 .navbar nav a:hover {
-
     color: var(--text);
 }
 
@@ -280,9 +257,7 @@ img {
 
 
 .hero-content {
-
     position: relative;
-
     z-index: 2;
 }
 
@@ -424,7 +399,6 @@ img {
 
 
 .hero-image:hover img {
-
     transform: scale(1.03);
 }
 
@@ -438,7 +412,6 @@ img {
     bottom: 20px;
 
     left: 20px;
-
     right: 20px;
 
     display: flex;
@@ -495,8 +468,6 @@ img {
 
 .about-grid {
 
-    margin-left: 150px;
-
     display: grid;
 
     grid-template-columns: 1.2fr 0.8fr;
@@ -506,7 +477,6 @@ img {
 
 
 .about-text {
-
     max-width: 650px;
 }
 
@@ -576,25 +546,16 @@ img {
 }
 
 
-/* =====================================================
-   CATÉGORIES DE PROJETS
-===================================================== */
-
 .project-category-section {
-
-    margin-left: 150px;
 
     margin-bottom: 130px;
 }
 
 
 .project-category-section:last-child {
-
     margin-bottom: 0;
 }
 
-
-/* En-tête de chaque catégorie */
 
 .project-category-header {
 
@@ -650,10 +611,6 @@ img {
 }
 
 
-/* =====================================================
-   GRILLE PROJETS
-===================================================== */
-
 .projects-grid {
 
     display: grid;
@@ -665,10 +622,13 @@ img {
 
 
 .project-card:nth-child(even) {
-
     margin-top: 120px;
 }
 
+
+/* =====================================================
+   PROJECT IMAGE + INTERACTION
+===================================================== */
 
 .project-image {
 
@@ -681,6 +641,8 @@ img {
     overflow: hidden;
 
     background: var(--background-light);
+
+    cursor: pointer;
 }
 
 
@@ -709,23 +671,13 @@ img {
 
     justify-content: center;
 
-    background: rgba(8, 20, 34, 0.62);
+    padding: 40px;
+
+    background: rgba(8, 20, 34, 0.82);
 
     opacity: 0;
 
     transition: opacity 0.4s ease;
-}
-
-
-.project-overlay span {
-
-    padding: 12px 18px;
-
-    border: 1px solid rgba(255,255,255,0.5);
-
-    font-size: 11px;
-
-    text-transform: uppercase;
 }
 
 
@@ -738,6 +690,84 @@ img {
 .project-image:hover .project-overlay {
 
     opacity: 1;
+}
+
+
+.project-preview {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    text-align: center;
+
+    transform: translateY(15px);
+
+    transition: transform 0.4s ease;
+}
+
+
+.project-image:hover .project-preview {
+
+    transform: translateY(0);
+}
+
+
+.preview-label {
+
+    display: block;
+
+    color: var(--accent);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+
+.project-preview p {
+
+    margin: 18px auto 22px;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+.preview-link {
+
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    color: var(--text);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+
+.preview-link:hover {
+
+    background: var(--text);
+
+    color: var(--background-dark);
 }
 
 
@@ -815,8 +845,6 @@ img {
 
 .timeline {
 
-    margin-left: 150px;
-
     border-top: 1px solid var(--border);
 }
 
@@ -886,8 +914,6 @@ img {
 
 
 .software-grid {
-
-    margin-left: 150px;
 
     display: grid;
 
@@ -1013,8 +1039,6 @@ img {
 
 .objectives-grid {
 
-    margin-left: 150px;
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -1046,7 +1070,6 @@ img {
 
 
 .objective-text {
-
     padding-top: 40px;
 }
 
@@ -1161,7 +1184,6 @@ img {
 
 
 .social-links a:hover {
-
     color: var(--accent);
 }
 
@@ -1193,7 +1215,6 @@ footer {
 
 
 footer a:hover {
-
     color: var(--accent);
 }
 
@@ -1203,7 +1224,6 @@ footer a:hover {
 ===================================================== */
 
 @media (max-width: 1000px) {
-
 
     .navbar nav {
         display: none;
@@ -1221,7 +1241,6 @@ footer a:hover {
 
 
     .hero-image {
-
         height: 550px;
     }
 
@@ -1232,66 +1251,38 @@ footer a:hover {
 
 
     .section {
-
         padding: 100px 30px;
     }
 
 
-    .section-number {
-
-        position: static;
-
-        margin-bottom: 25px;
-    }
-
-
-    .section-header,
-    .about-grid,
-    .project-category-section,
-    .timeline,
-    .software-grid,
-    .objectives-grid {
-
-        margin-left: 0;
-    }
-
-
     .about-grid {
-
         grid-template-columns: 1fr;
-
         gap: 60px;
     }
 
 
     .projects-grid {
-
         grid-template-columns: 1fr;
     }
 
 
     .project-card:nth-child(even) {
-
         margin-top: 0;
     }
 
 
     .timeline-item {
-
         grid-template-columns: 150px 1fr;
     }
 
 
     .software-grid {
-
         grid-template-columns: repeat(2, 1fr);
     }
 
 
     .objectives-grid {
-
         grid-template-columns: 1fr;
-
         gap: 30px;
     }
 
@@ -1312,39 +1303,32 @@ footer a:hover {
 
 @media (max-width: 600px) {
 
-
     .navbar {
-
         padding: 0 20px;
     }
 
 
     .nav-button {
-
         display: none;
     }
 
 
     .hero {
-
         padding: 130px 20px 60px;
     }
 
 
     .hero h1 {
-
         font-size: 76px;
     }
 
 
     .hero h1 span {
-
         margin-left: 30px;
     }
 
 
     .hero-description {
-
         margin-top: 40px;
     }
 
@@ -1358,43 +1342,36 @@ footer a:hover {
 
 
     .hero-image {
-
         height: 420px;
     }
 
 
     .section {
-
         padding: 80px 20px;
     }
 
 
     .section-header {
-
         margin-bottom: 50px;
     }
 
 
     .section-header h2 {
-
         font-size: 52px;
     }
 
 
     .about-text .large-text {
-
         font-size: 20px;
     }
 
 
     .projects-grid {
-
         gap: 60px;
     }
 
 
     .project-category-section {
-
         margin-bottom: 90px;
     }
 
@@ -1410,7 +1387,6 @@ footer a:hover {
 
 
     .project-category-header h3 {
-
         font-size: 28px;
     }
 
@@ -1423,44 +1399,47 @@ footer a:hover {
     }
 
 
-    .timeline-item {
+    .project-overlay {
+        padding: 25px;
+    }
 
+
+    .project-preview p {
+        font-size: 12px;
+    }
+
+
+    .timeline-item {
         display: block;
     }
 
 
     .timeline-date {
-
         margin-bottom: 20px;
     }
 
 
     .timeline-content h3 {
-
         font-size: 26px;
     }
 
 
     .software-grid {
-
         grid-template-columns: 1fr;
     }
 
 
     .software-card {
-
         min-height: 190px;
     }
 
 
     .software-card h3 {
-
         margin-top: 45px;
     }
 
 
     .cv h2 {
-
         font-size: 52px;
     }
 
@@ -1474,19 +1453,16 @@ footer a:hover {
 
 
     .contact h2 {
-
         font-size: 65px;
     }
 
 
     .contact-email {
-
         font-size: 16px;
     }
 
 
     .social-links {
-
         flex-wrap: wrap;
     }
 
