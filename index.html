@@ -4,48 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nino Rezzi — Portfolio</title>
-
-    <meta
-        name="description"
-        content="Portfolio de Nino Rezzi — Audiovisuel, gestion de production et réalisation."
-    >
-
-    <link rel="stylesheet" href="style.css">
+    <title>Nino Rezzi — Projets</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
 
-    <a href="#accueil" class="logo">
-        NINO <span>REZZI</span>
+    <a href="index.html" class="logo">
+        NINO REZZI
     </a>
 
-    <nav>
+    <nav class="nav-links">
         <a href="#accueil">Accueil</a>
         <a href="#apropos">À propos</a>
         <a href="#formation">Formation</a>
-        <a href="#projets">Projets</a>
-        <a href="#logiciels">Logiciels</a>
-        <a href="#cv">CV</a>
+        <a href="#projets" class="active">Projets</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <a
-        href="documents/CV-Nino-Rezzi.pdf"
-        target="_blank"
-        class="nav-button"
-    >
+    <a href="#cv" class="cv-button">
         Télécharger mon CV
+        <span>↓</span>
     </a>
 
 </header>
@@ -53,229 +40,66 @@
 
 <main>
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+    <!-- INTRO PROJETS -->
 
-<section id="accueil" class="hero">
+    <section class="projects-intro" id="projets">
 
-    <div class="hero-content">
+        <div class="intro-title">
 
-        <p class="eyebrow">
-            AUDIOVISUEL · PRODUCTION · DOCUMENTAIRE
-        </p>
-
-        <h1>
-            Nino<br>
-            <em>Rezzi</em>
-        </h1>
-
-        <p class="hero-description">
-            Formé à la gestion de production audiovisuelle, je développe
-            mon parcours à travers des projets, des stages et des expériences
-            professionnelles dans différents environnements de production.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a
-                href="#projets"
-                class="button button-primary"
-            >
-                Voir mes projets
-            </a>
-
-            <a
-                href="documents/CV-Nino-Rezzi.pdf"
-                target="_blank"
-                class="button button-secondary"
-            >
-                Mon CV
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="hero-image">
-
-        <img
-            src="images/hero.jpg"
-            alt="Nino Rezzi"
-        >
-
-        <div class="image-caption">
-            <span>PORTFOLIO</span>
-            <span>2026</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     À PROPOS
-===================================================== -->
-
-<section id="apropos" class="section about">
-
-    <div class="section-header">
-
-        <p class="eyebrow">
-            À PROPOS
-        </p>
-
-        <h2>
-            Raconter le réel.<br>
-            <em>Donner du sens aux images.</em>
-        </h2>
-
-    </div>
-
-
-    <div class="about-grid">
-
-        <div class="about-text">
-
-            <p class="large-text">
-                Je m'appelle Nino Rezzi et je me forme aux métiers de
-                l'audiovisuel, avec une spécialisation en gestion de production.
-            </p>
-
-            <p>
-                Mon parcours m'a permis de découvrir différentes étapes
-                de fabrication d'un projet audiovisuel : préparation,
-                organisation, production, tournage et post-production.
-            </p>
-
-            <p>
-                À travers mes différentes expériences, j'ai eu l'occasion
-                de travailler dans des environnements professionnels variés,
-                de la production télévisuelle à la régie, en passant par
-                des projets audiovisuels indépendants.
-            </p>
-
-            <p>
-                Je souhaite aujourd'hui continuer à développer mon expérience
-                professionnelle et participer à des projets qui me ressemblent,
-                notamment dans les domaines du documentaire, du reportage,
-                de la nature et de l'animalier.
-            </p>
-
-        </div>
-
-
-        <div class="about-info">
-
-            <div class="info-item">
-                <span>Formation</span>
-                <strong>BTS Audiovisuel</strong>
-                <small>Gestion de production</small>
-            </div>
-
-            <div class="info-item">
-                <span>Domaines d'intérêt</span>
-                <strong>Documentaire</strong>
-                <small>Reportage · Nature · Animalier</small>
-            </div>
-
-            <div class="info-item">
-                <span>Profil</span>
-                <strong>Production audiovisuelle</strong>
-                <small>Organisation · Régie · Coordination</small>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     PROJETS
-===================================================== -->
-
-<section id="projets" class="section projects">
-
-    <div class="section-header projects-heading">
-
-        <div>
-
-            <p class="eyebrow">
+            <div class="eyebrow">
                 MON TRAVAIL
-            </p>
+            </div>
 
-            <h2>
-                Mes projets
-            </h2>
+            <div class="title-line">
+
+                <h1>Mes projets</h1>
+
+                <div class="horizontal-line"></div>
+
+            </div>
 
         </div>
 
-        <p>
-            Des plateaux de tournage aux événements en direct,
-            en passant par la production et la réalisation,
-            découvrez une sélection de mes expériences.
+        <p class="intro-description">
+            Découvrez une sélection de mes expériences dans le domaine
+            de la production et de la réalisation audiovisuelle.
         </p>
 
-    </div>
+    </section>
 
 
     <!-- FILTRES -->
 
-    <div class="project-filters">
+    <section class="filters">
 
-        <button
-            class="filter-button active"
-            data-filter="all"
-        >
+        <button class="filter active" data-filter="all">
             Tous
         </button>
 
-        <button
-            class="filter-button"
-            data-filter="stagiaire"
-        >
+        <button class="filter" data-filter="stagiaire">
             Stagiaire
         </button>
 
-        <button
-            class="filter-button"
-            data-filter="assistant"
-        >
+        <button class="filter" data-filter="assistant">
             Assistant de production
         </button>
 
-        <button
-            class="filter-button"
-            data-filter="realisateur"
-        >
+        <button class="filter" data-filter="realisateur">
             Réalisateur
         </button>
 
-    </div>
+    </section>
 
 
-    <!-- =================================================
-         PROJETS
-    ================================================= -->
+    <!-- PREMIÈRE LIGNE : 4 PROJETS -->
 
-    <div class="projects-grid">
-
+    <section class="projects-grid projects-grid-large">
 
         <!-- DIBBOUK -->
 
-        <article
-            class="project-card"
-            data-category="stagiaire"
-        >
+        <article class="project-card" data-category="stagiaire">
 
-            <a
-                href="projets/dibbouk.html"
-                class="project-image-link"
-            >
+            <a href="projets/dibbouk.html" class="project-link">
 
                 <div class="project-image">
 
@@ -284,60 +108,34 @@
                         alt="Le Dibbouk — Fantôme du monde disparu"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            STAGIAIRE · DOCUMENTAIRE
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        STAGIAIRE
+                    </span>
 
-                    </div>
+                    <h2>
+                        Le Dibbouk, fantôme du monde disparu
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
-
-                <h3>
-                    Le Dibbouk
-                </h3>
-
-                <p>
-                    Documentaire de 7 minutes — Janvier 2025.
-                </p>
-
-                <a
-                    href="projets/dibbouk.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
 
         </article>
 
 
         <!-- ROLAND GARROS -->
 
-        <article
-            class="project-card"
-            data-category="stagiaire"
-        >
+        <article class="project-card" data-category="stagiaire">
 
-            <a
-                href="projets/roland-garros.html"
-                class="project-image-link"
-            >
+            <a href="projets/roland-garros.html" class="project-link">
 
                 <div class="project-image">
 
@@ -346,60 +144,34 @@
                         alt="Roland Garros 2025"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            STAGIAIRE · PRODUCTION
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        STAGIAIRE
+                    </span>
 
-                    </div>
+                    <h2>
+                        Roland Garros 2025
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
-
-                <h3>
-                    Roland Garros 2025
-                </h3>
-
-                <p>
-                    France Télévisions — 19 mai au 8 juin 2025.
-                </p>
-
-                <a
-                    href="projets/roland-garros.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
 
         </article>
 
 
         <!-- TOUR DE FRANCE -->
 
-        <article
-            class="project-card"
-            data-category="stagiaire"
-        >
+        <article class="project-card" data-category="stagiaire">
 
-            <a
-                href="projets/tour-de-france.html"
-                class="project-image-link"
-            >
+            <a href="projets/tour-de-france.html" class="project-link">
 
                 <div class="project-image">
 
@@ -408,60 +180,34 @@
                         alt="Tour de France 2025"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            STAGIAIRE · ADMINISTRATION
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        STAGIAIRE
+                    </span>
 
-                    </div>
+                    <h2>
+                        Tour de France 2025
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
-
-                <h3>
-                    Tour de France 2025
-                </h3>
-
-                <p>
-                    France TV Sport — Administration de production.
-                </p>
-
-                <a
-                    href="projets/tour-de-france.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
 
         </article>
 
 
         <!-- 14 JUILLET -->
 
-        <article
-            class="project-card"
-            data-category="stagiaire"
-        >
+        <article class="project-card" data-category="stagiaire">
 
-            <a
-                href="projets/14-juillet.html"
-                class="project-image-link"
-            >
+            <a href="projets/14-juillet.html" class="project-link">
 
                 <div class="project-image">
 
@@ -470,60 +216,40 @@
                         alt="14 juillet 2025"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            STAGIAIRE · PRODUCTION
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        STAGIAIRE
+                    </span>
 
-                    </div>
+                    <h2>
+                        14 juillet 2025
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
 
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
-
-                <h3>
-                    14 juillet 2025
-                </h3>
-
-                <p>
-                    France Télévisions — Production.
-                </p>
-
-                <a
-                    href="projets/14-juillet.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
-
         </article>
 
+    </section>
+
+
+    <!-- DEUXIÈME LIGNE : 5 PROJETS -->
+
+    <section class="projects-grid projects-grid-small">
 
         <!-- RÉGIE -->
 
-        <article
-            class="project-card"
-            data-category="stagiaire"
-        >
+        <article class="project-card" data-category="stagiaire">
 
-            <a
-                href="projets/regie.html"
-                class="project-image-link"
-            >
+            <a href="projets/regie.html" class="project-link">
 
                 <div class="project-image">
 
@@ -532,112 +258,65 @@
                         alt="Expérience en régie"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            STAGIAIRE · RÉGIE
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        STAGIAIRE
+                    </span>
 
-                    </div>
+                    <h2>
+                        Expérience en régie
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
-
-                <h3>
-                    Expérience en régie
-                </h3>
-
-                <p>
-                    France TV — France Info · Novembre–Décembre 2025.
-                </p>
-
-                <a
-                    href="projets/regie.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
 
         </article>
 
 
         <!-- PCP INTRO -->
 
-        <article
-            class="project-card"
-            data-category="assistant"
-        >
+        <article class="project-card" data-category="assistant">
 
-            <div class="project-image">
+            <a href="#" class="project-link">
 
-                <img
-                    src="images/pcp-intro.jpg"
-                    alt="PCP — Intro"
-                >
+                <div class="project-image project-placeholder">
+                    PCP
+                </div>
 
-                <div class="project-hover">
+                <div class="project-info">
 
-                    <span>
+                    <span class="project-category">
                         ASSISTANT DE PRODUCTION
                     </span>
 
-                    <strong>
-                        Bientôt disponible
-                    </strong>
+                    <h2>
+                        PCP — Intro
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
-            </div>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    ASSISTANT DE PRODUCTION
-                </span>
-
-                <h3>
-                    PCP — Intro
-                </h3>
-
-                <p>
-                    Projet audiovisuel — BTS Suger.
-                </p>
-
-                <span class="project-link disabled">
-                    Bientôt disponible
-                </span>
-
-            </div>
+            </a>
 
         </article>
 
 
         <!-- PCP RELATION -->
 
-        <article
-            class="project-card"
-            data-category="assistant"
-        >
+        <article class="project-card" data-category="assistant">
 
-            <a
-                href="projets/pcp-relation.html"
-                class="project-image-link"
-            >
+            <a href="projets/pcp-relation.html" class="project-link">
 
                 <div class="project-image">
 
@@ -646,122 +325,70 @@
                         alt="PCP — In relation to Whom"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            ASSISTANT DE PRODUCTION
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        ASSISTANT DE PRODUCTION
+                    </span>
 
-                    </div>
+                    <h2>
+                        PCP — In relation to Whom
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    ASSISTANT DE PRODUCTION
-                </span>
-
-                <h3>
-                    PCP — In relation to Whom
-                </h3>
-
-                <p>
-                    Mars — Mai 2026 · BTS Suger.
-                </p>
-
-                <a
-                    href="projets/pcp-relation.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
 
         </article>
 
 
         <!-- JT -->
 
-        <article
-            class="project-card"
-            data-category="realisateur"
-        >
+        <article class="project-card" data-category="realisateur">
 
-            <a
-                href="projets/jt-direct.html"
-                class="project-image-link"
-            >
+            <a href="projets/jt-direct.html" class="project-link">
 
                 <div class="project-image">
 
                     <img
                         src="images/jt-direct.jpg"
-                        alt="JT en direct"
+                        alt="Réalisation en direct d'un journal télévisé"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            RÉALISATEUR
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        RÉALISATEUR
+                    </span>
 
-                    </div>
+                    <h2>
+                        Le JT en direct
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
-
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    RÉALISATEUR
-                </span>
-
-                <h3>
-                    JT en direct
-                </h3>
-
-                <p>
-                    Janvier 2026 — BTS Suger.
-                </p>
-
-                <a
-                    href="projets/jt-direct.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
 
         </article>
 
 
         <!-- JPO -->
 
-        <article
-            class="project-card"
-            data-category="realisateur"
-        >
+        <article class="project-card" data-category="realisateur">
 
-            <a
-                href="projets/jpo.html"
-                class="project-image-link"
-            >
+            <a href="projets/jpo.html" class="project-link">
 
                 <div class="project-image">
 
@@ -770,405 +397,71 @@
                         alt="Portes ouvertes du BTS"
                     >
 
-                    <div class="project-hover">
+                </div>
 
-                        <span>
-                            RÉALISATEUR
-                        </span>
+                <div class="project-info">
 
-                        <strong>
-                            Voir le projet&nbsp; →
-                        </strong>
+                    <span class="project-category">
+                        RÉALISATEUR
+                    </span>
 
-                    </div>
+                    <h2>
+                        Portes ouvertes du BTS
+                    </h2>
+
+                    <span class="project-more">
+                        Voir le projet →
+                    </span>
 
                 </div>
 
             </a>
 
-
-            <div class="project-info">
-
-                <span class="project-category">
-                    RÉALISATEUR
-                </span>
-
-                <h3>
-                    Portes ouvertes du BTS
-                </h3>
-
-                <p>
-                    Février 2026 — BTS Suger.
-                </p>
-
-                <a
-                    href="projets/jpo.html"
-                    class="project-link"
-                >
-                    Voir le projet&nbsp; →
-                </a>
-
-            </div>
-
         </article>
 
-    </div>
+    </section>
 
-</section>
 
+    <!-- SECTIONS MINIMALES POUR LA NAVIGATION -->
 
-<!-- =====================================================
-     FORMATION
-===================================================== -->
+    <section id="accueil" class="dummy-section"></section>
 
-<section id="formation" class="section formation">
+    <section id="apropos" class="dummy-section"></section>
 
-    <div class="section-header">
+    <section id="formation" class="dummy-section"></section>
 
-        <p class="eyebrow">
-            PARCOURS
-        </p>
-
-        <h2>
-            Formation
-        </h2>
-
-    </div>
-
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-
-            <div class="timeline-date">
-                2024 — 2026
-            </div>
-
-            <div class="timeline-content">
-
-                <span>
-                    FORMATION
-                </span>
-
-                <h3>
-                    BTS Audiovisuel — Gestion de production
-                </h3>
-
-                <p>
-                    Formation spécialisée dans la gestion de production
-                    audiovisuelle, permettant de comprendre et de participer
-                    aux différentes étapes de fabrication d'un projet.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-date">
-                2022 — 2024
-            </div>
-
-            <div class="timeline-content">
-
-                <span>
-                    FORMATION
-                </span>
-
-                <h3>
-                    CPGE ECT
-                </h3>
-
-                <p>
-                    Classe préparatoire économique et commerciale
-                    voie technologique.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-date">
-                2022
-            </div>
-
-            <div class="timeline-content">
-
-                <span>
-                    FORMATION
-                </span>
-
-                <h3>
-                    Baccalauréat STMG — Mention Bien
-                </h3>
-
-                <p>
-                    Formation technologique orientée vers l'économie,
-                    le management et la gestion.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     LOGICIELS
-===================================================== -->
-
-<section id="logiciels" class="section skills">
-
-    <div class="section-header">
-
-        <p class="eyebrow">
-            OUTILS
-        </p>
-
-        <h2>
-            Logiciels
-        </h2>
-
-        <p>
-            Les principaux outils que j'utilise dans mes projets
-            et mon parcours professionnel.
-        </p>
-
-    </div>
-
-
-    <div class="software-grid">
-
-        <div class="software-card">
-            <span>01</span>
-            <h3>Word</h3>
-            <p>Traitement de texte</p>
-        </div>
-
-        <div class="software-card">
-            <span>02</span>
-            <h3>Excel</h3>
-            <p>Tableurs · Organisation · Suivi</p>
-        </div>
-
-        <div class="software-card">
-            <span>03</span>
-            <h3>PowerPoint</h3>
-            <p>Présentation · Communication</p>
-        </div>
-
-        <div class="software-card">
-            <span>04</span>
-            <h3>Photoshop</h3>
-            <p>Retouche · Création graphique</p>
-        </div>
-
-        <div class="software-card">
-            <span>05</span>
-            <h3>Lightroom</h3>
-            <p>Gestion · Retouche photographique</p>
-        </div>
-
-        <div class="software-card">
-            <span>06</span>
-            <h3>DaVinci Resolve</h3>
-            <p>Montage · Post-production</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CV
-===================================================== -->
-
-<section id="cv" class="cv">
-
-    <div class="cv-container">
-
-        <div>
-
-            <p class="eyebrow">
-                MON PARCOURS
-            </p>
-
-            <h2>
-                Mon CV
-            </h2>
-
-            <p>
-                Retrouvez mon parcours, mes expériences professionnelles,
-                ma formation et mes compétences dans mon CV.
-            </p>
-
-        </div>
-
-
-        <a
-            href="documents/CV-Nino-Rezzi.pdf"
-            target="_blank"
-            class="button button-primary"
-        >
-            Télécharger mon CV&nbsp; →
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     OBJECTIFS
-===================================================== -->
-
-<section class="section objectives">
-
-    <div class="objectives-grid">
-
-        <div>
-
-            <p class="eyebrow">
-                LA SUITE
-            </p>
-
-            <h2>
-                Construire la suite<br>
-                <em>de mon parcours.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="objective-text">
-
-            <p>
-                Je souhaite aujourd'hui poursuivre mon parcours professionnel
-                dans l'audiovisuel afin de continuer à apprendre au contact
-                de professionnels et de participer à des projets concrets.
-            </p>
-
-            <p>
-                Mon objectif est de développer mon expérience dans la production
-                audiovisuelle et de construire progressivement mon parcours autour
-                de projets qui m'intéressent, notamment le documentaire,
-                le reportage, la nature et le vivant.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section id="contact" class="contact">
-
-    <div class="contact-content">
-
-        <p class="eyebrow">
-            CONTACT
-        </p>
-
-        <h2>
-            Un projet ?<br>
-            <em>Parlons-en.</em>
-        </h2>
-
-        <a
-            href="mailto:Ninorezzi10@outlook.fr"
-            class="contact-email"
-        >
-            Ninorezzi10@outlook.fr
-        </a>
-
-        <div class="social-links">
-
-            <a href="#" target="_blank">
-                LinkedIn
-            </a>
-
-            <a href="#" target="_blank">
-                Instagram
-            </a>
-
-            <a href="#" target="_blank">
-                Vimeo
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+    <section id="contact" class="dummy-section"></section>
 
 </main>
 
 
-<footer>
-
-    <span>
-        © 2026 Nino Rezzi
-    </span>
-
-    <span>
-        Portfolio audiovisuel
-    </span>
-
-    <a href="#accueil">
-        Retour en haut ↑
-    </a>
-
-</footer>
-
-
 <script>
 
-const filterButtons =
-    document.querySelectorAll(".filter-button");
+const filters = document.querySelectorAll(".filter");
+const cards = document.querySelectorAll(".project-card");
 
-const projectCards =
-    document.querySelectorAll(".project-card");
+filters.forEach(filter => {
 
+    filter.addEventListener("click", () => {
 
-filterButtons.forEach((button) => {
-
-    button.addEventListener("click", () => {
-
-        const filter =
-            button.dataset.filter;
-
-
-        filterButtons.forEach((item) => {
-            item.classList.remove("active");
+        filters.forEach(button => {
+            button.classList.remove("active");
         });
 
-        button.classList.add("active");
+        filter.classList.add("active");
 
+        const selected = filter.dataset.filter;
 
-        projectCards.forEach((card) => {
+        cards.forEach(card => {
 
-            const visible =
-                filter === "all" ||
-                card.dataset.category === filter;
-
-            card.classList.toggle(
-                "is-hidden",
-                !visible
-            );
+            if (
+                selected === "all" ||
+                card.dataset.category === selected
+            ) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
 
         });
 
@@ -1177,7 +470,6 @@ filterButtons.forEach((button) => {
 });
 
 </script>
-
 
 </body>
 </html>
