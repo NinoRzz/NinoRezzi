@@ -3,7 +3,6 @@
 ===================================================== */
 
 :root {
-
     --background: #10243d;
     --background-dark: #0c1c30;
     --background-light: #17304d;
@@ -16,9 +15,7 @@
     --accent: #79d6d0;
 
     --container: 1240px;
-
 }
-
 
 
 /* =====================================================
@@ -31,14 +28,11 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
     background: var(--background);
     color: var(--text);
 
@@ -49,30 +43,24 @@ body {
     overflow-x: hidden;
 }
 
-
 a {
-
     color: inherit;
     text-decoration: none;
-
 }
-
 
 img {
-
     display: block;
     width: 100%;
-
 }
 
+button {
+    font-family: inherit;
+}
 
 ::selection {
-
     background: var(--accent);
     color: var(--background-dark);
-
 }
-
 
 
 /* =====================================================
@@ -80,7 +68,6 @@ img {
 ===================================================== */
 
 .section {
-
     position: relative;
 
     max-width: var(--container);
@@ -88,34 +75,23 @@ img {
     margin: auto;
 
     padding: 150px 40px;
-
 }
-
 
 .section-header {
-
     margin-bottom: 80px;
-
 }
 
-
 .eyebrow {
-
     color: var(--text-muted);
 
     font-size: 11px;
-
     font-weight: 600;
 
     letter-spacing: 0.18em;
-
     text-transform: uppercase;
-
 }
 
-
 .section-header h2 {
-
     margin-top: 20px;
 
     font-size: clamp(48px, 6vw, 82px);
@@ -125,29 +101,20 @@ img {
     letter-spacing: -0.05em;
 
     line-height: 0.95;
-
 }
-
 
 .section-header h2 em {
-
     font-family: "Playfair Display", serif;
-
     font-weight: 500;
-
 }
 
-
 .section-header > p:last-child {
-
     max-width: 520px;
 
     margin-top: 30px;
 
     color: var(--text-muted);
-
 }
-
 
 
 /* =====================================================
@@ -155,7 +122,6 @@ img {
 ===================================================== */
 
 .navbar {
-
     position: fixed;
 
     z-index: 100;
@@ -167,9 +133,7 @@ img {
     height: 80px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding: 0 40px;
@@ -179,57 +143,39 @@ img {
     backdrop-filter: blur(15px);
 
     border-bottom: 1px solid var(--border);
-
 }
 
-
 .logo {
-
     font-size: 18px;
 
     font-weight: 700;
 
     letter-spacing: 0.05em;
-
 }
-
 
 .logo span {
-
     color: var(--accent);
-
 }
 
-
 .navbar nav {
-
     display: flex;
 
     gap: 32px;
-
 }
 
-
 .navbar nav a {
-
     color: var(--text-muted);
 
     font-size: 12px;
 
     transition: color 0.3s ease;
-
 }
-
 
 .navbar nav a:hover {
-
     color: var(--text);
-
 }
 
-
 .nav-button {
-
     border: 1px solid var(--border);
 
     padding: 10px 17px;
@@ -241,18 +187,13 @@ img {
     letter-spacing: 0.08em;
 
     transition: 0.3s ease;
-
 }
 
-
 .nav-button:hover {
-
     background: var(--text);
 
     color: var(--background-dark);
-
 }
-
 
 
 /* =====================================================
@@ -260,7 +201,6 @@ img {
 ===================================================== */
 
 .hero {
-
     position: relative;
 
     min-height: 100vh;
@@ -278,21 +218,15 @@ img {
     align-items: center;
 
     gap: 80px;
-
 }
 
-
 .hero-content {
-
     position: relative;
 
     z-index: 2;
-
 }
 
-
 .hero h1 {
-
     margin-top: 25px;
 
     font-size: clamp(80px, 12vw, 170px);
@@ -302,12 +236,9 @@ img {
     letter-spacing: -0.08em;
 
     line-height: 0.78;
-
 }
 
-
 .hero h1 span {
-
     display: inline-block;
 
     margin-left: 70px;
@@ -315,12 +246,9 @@ img {
     font-family: "Playfair Display", serif;
 
     font-weight: 500;
-
 }
 
-
 .hero-description {
-
     max-width: 470px;
 
     margin-top: 55px;
@@ -330,20 +258,15 @@ img {
     font-size: 16px;
 
     line-height: 1.8;
-
 }
 
-
 .hero-buttons {
-
     display: flex;
 
     gap: 15px;
 
     margin-top: 40px;
-
 }
-
 
 
 /* =====================================================
@@ -351,11 +274,9 @@ img {
 ===================================================== */
 
 .button {
-
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     min-height: 52px;
@@ -371,43 +292,29 @@ img {
     text-transform: uppercase;
 
     transition: all 0.3s ease;
-
 }
 
-
 .button-primary {
-
     background: var(--text);
 
     color: var(--background-dark);
-
 }
 
-
 .button-primary:hover {
-
     background: var(--accent);
 
     transform: translateY(-2px);
-
 }
-
 
 .button-secondary {
-
     border: 1px solid var(--border);
-
 }
 
-
 .button-secondary:hover {
-
     border-color: var(--text);
 
     transform: translateY(-2px);
-
 }
-
 
 
 /* =====================================================
@@ -415,18 +322,14 @@ img {
 ===================================================== */
 
 .hero-image {
-
     position: relative;
 
     height: 680px;
 
     overflow: hidden;
-
 }
 
-
 .hero-image img {
-
     width: 100%;
     height: 100%;
 
@@ -435,25 +338,18 @@ img {
     filter: saturate(0.85);
 
     transition: transform 0.8s ease;
-
 }
-
 
 .hero-image:hover img {
-
     transform: scale(1.03);
-
 }
 
-
 .image-caption {
-
     position: absolute;
 
     z-index: 2;
 
     bottom: 20px;
-
     left: 20px;
     right: 20px;
 
@@ -464,12 +360,9 @@ img {
     font-size: 10px;
 
     letter-spacing: 0.1em;
-
 }
 
-
 .scroll-indicator {
-
     position: absolute;
 
     bottom: 35px;
@@ -486,19 +379,14 @@ img {
     font-size: 9px;
 
     letter-spacing: 0.15em;
-
 }
 
-
 .scroll-indicator span {
-
     width: 35px;
     height: 1px;
 
     background: var(--text-muted);
-
 }
-
 
 
 /* =====================================================
@@ -506,80 +394,55 @@ img {
 ===================================================== */
 
 .about {
-
     border-top: 1px solid var(--border);
-
 }
 
-
 .about-grid {
-
     display: grid;
 
     grid-template-columns: 1.2fr 0.8fr;
 
     gap: 120px;
-
 }
-
 
 .about-text {
-
     max-width: 650px;
-
 }
 
-
 .about-text p {
-
     margin-bottom: 25px;
 
     color: var(--text-muted);
-
 }
 
-
 .about-text .large-text {
-
     color: var(--text);
 
     font-size: 24px;
 
     line-height: 1.5;
-
 }
-
 
 .about-info {
-
     border-top: 1px solid var(--border);
-
 }
 
-
 .info-item {
-
     padding: 25px 0;
 
     border-bottom: 1px solid var(--border);
-
 }
-
 
 .info-item span,
 .info-item small {
-
     display: block;
 
     color: var(--text-muted);
 
     font-size: 11px;
-
 }
 
-
 .info-item strong {
-
     display: block;
 
     margin: 5px 0;
@@ -587,9 +450,7 @@ img {
     font-size: 16px;
 
     font-weight: 500;
-
 }
-
 
 
 /* =====================================================
@@ -597,107 +458,98 @@ img {
 ===================================================== */
 
 .projects {
-
     border-top: 1px solid var(--border);
-
 }
-
-
-.projects-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 55px 18px;
-
-}
-
-
-.project-card {
-
-    min-width: 0;
-
-}
-
 
 
 /* =====================================================
-   PROJECT FILTERS
+   FILTRES
 ===================================================== */
 
 .project-filters {
-
     display: flex;
 
     align-items: center;
 
-    gap: 10px;
+    gap: 12px;
 
-    margin: -20px 0 45px;
+    margin-bottom: 60px;
 
     flex-wrap: wrap;
-
 }
 
-
-.project-filter {
-
-    appearance: none;
-
+.filter-btn {
     border: 1px solid transparent;
 
     background: transparent;
 
     color: var(--text-muted);
 
-    padding: 10px 17px;
+    font-size: 13px;
+
+    font-weight: 500;
+
+    padding: 12px 22px;
 
     border-radius: 999px;
 
-    font-family: inherit;
-
-    font-size: 12px;
-
     cursor: pointer;
 
-    transition: all 0.25s ease;
-
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
 }
 
-
-.project-filter:hover {
-
+.filter-btn:hover {
     color: var(--text);
 
     border-color: var(--border);
-
 }
 
-
-.project-filter.active {
-
+.filter-btn.active {
     background: var(--text);
 
     color: var(--background-dark);
 
+    border-color: var(--text);
 }
-
-
-.project-card.is-hidden {
-
-    display: none;
-
-}
-
 
 
 /* =====================================================
-   PROJECT IMAGE
+   GRILLE DES PROJETS
+===================================================== */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 80px 35px;
+}
+
+.project-card {
+    min-width: 0;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.project-card:nth-child(even) {
+    margin-top: 120px;
+}
+
+.project-card.is-hidden {
+    display: none;
+}
+
+
+/* =====================================================
+   IMAGE + INTERACTION
 ===================================================== */
 
 .project-image {
-
     position: relative;
 
     display: block;
@@ -709,39 +561,19 @@ img {
     background: var(--background-light);
 
     cursor: pointer;
-
-    border: 1px solid var(--border);
-
 }
 
-
 .project-image img {
-
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 
     transition:
-        transform 0.7s cubic-bezier(.2,.8,.2,1);
-
+        transform 0.7s cubic-bezier(.2, .8, .2, 1);
 }
-
-
-.project-image:hover img {
-
-    transform: scale(1.05);
-
-}
-
-
-
-/* =====================================================
-   PROJECT OVERLAY
-===================================================== */
 
 .project-overlay {
-
     position: absolute;
 
     inset: 0;
@@ -749,30 +581,26 @@ img {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
-    padding: 28px;
+    padding: 40px;
 
-    background: rgba(8, 20, 34, 0.88);
+    background: rgba(8, 20, 34, 0.82);
 
     opacity: 0;
 
-    transition: opacity 0.35s ease;
-
+    transition: opacity 0.4s ease;
 }
 
+.project-image:hover img {
+    transform: scale(1.05);
+}
 
-.project-image:hover .project-overlay,
-.project-card.is-open .project-overlay {
-
+.project-image:hover .project-overlay {
     opacity: 1;
-
 }
-
 
 .project-preview {
-
     width: 100%;
 
     max-width: 420px;
@@ -782,20 +610,13 @@ img {
     transform: translateY(15px);
 
     transition: transform 0.4s ease;
-
 }
 
-
-.project-image:hover .project-preview,
-.project-card.is-open .project-preview {
-
+.project-image:hover .project-preview {
     transform: translateY(0);
-
 }
-
 
 .preview-label {
-
     display: block;
 
     color: var(--accent);
@@ -807,12 +628,9 @@ img {
     letter-spacing: 0.18em;
 
     text-transform: uppercase;
-
 }
 
-
 .project-preview p {
-
     margin: 18px auto 22px;
 
     color: var(--text);
@@ -820,17 +638,14 @@ img {
     font-size: 14px;
 
     line-height: 1.7;
-
 }
 
-
 .preview-link {
-
     display: inline-block;
 
     padding: 11px 18px;
 
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 
     color: var(--text);
 
@@ -843,53 +658,38 @@ img {
     text-transform: uppercase;
 
     transition: 0.3s ease;
-
 }
 
-
 .preview-link:hover {
-
     background: var(--text);
 
     color: var(--background-dark);
-
 }
-
 
 
 /* =====================================================
-   PROJECT INFO
+   INFORMATIONS PROJET
 ===================================================== */
 
 .project-info {
-
     padding-top: 20px;
-
 }
 
-
 .project-info > div {
-
     display: flex;
 
     align-items: center;
 
     gap: 15px;
-
 }
 
-
 .project-number {
-
     color: var(--text-muted);
 
     font-size: 10px;
-
 }
 
-
 .project-category {
-
     color: var(--accent);
 
     font-size: 9px;
@@ -897,52 +697,44 @@ img {
     font-weight: 600;
 
     letter-spacing: 0.15em;
-
 }
 
-
 .project-info h3 {
+    margin-top: 12px;
 
-    margin-top: 10px;
-
-    font-size: 20px;
+    font-size: 26px;
 
     font-weight: 500;
 
     letter-spacing: -0.03em;
 
     line-height: 1.15;
-
 }
 
-
 .project-info p {
-
     max-width: 400px;
 
-    margin-top: 7px;
+    margin-top: 8px;
 
     color: var(--text-muted);
 
-    font-size: 12px;
-
+    font-size: 13px;
 }
-
 
 
 /* =====================================================
    FORMATION
 ===================================================== */
 
-.timeline {
-
+.formation {
     border-top: 1px solid var(--border);
-
 }
 
+.timeline {
+    border-top: 1px solid var(--border);
+}
 
 .timeline-item {
-
     display: grid;
 
     grid-template-columns: 220px 1fr;
@@ -950,21 +742,15 @@ img {
     padding: 50px 0;
 
     border-bottom: 1px solid var(--border);
-
 }
 
-
 .timeline-date {
-
     color: var(--text-muted);
 
     font-size: 13px;
-
 }
 
-
 .timeline-content > span {
-
     color: var(--accent);
 
     font-size: 9px;
@@ -972,12 +758,9 @@ img {
     font-weight: 600;
 
     letter-spacing: 0.15em;
-
 }
 
-
 .timeline-content h3 {
-
     margin-top: 8px;
 
     font-size: 32px;
@@ -985,20 +768,15 @@ img {
     font-weight: 500;
 
     letter-spacing: -0.04em;
-
 }
 
-
 .timeline-content p {
-
     max-width: 700px;
 
     margin-top: 15px;
 
     color: var(--text-muted);
-
 }
-
 
 
 /* =====================================================
@@ -1006,16 +784,12 @@ img {
 ===================================================== */
 
 .cv {
-
     max-width: none;
 
     background: var(--background);
-
 }
 
-
 .cv-container {
-
     max-width: 1090px;
 
     margin: auto;
@@ -1023,35 +797,26 @@ img {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 50px;
-
 }
 
-
 .cv h2 {
-
     margin-top: 15px;
 
     font-size: 65px;
 
     letter-spacing: -0.05em;
-
 }
 
-
 .cv p:last-of-type {
-
     max-width: 450px;
 
     margin-top: 20px;
 
     color: var(--text-muted);
-
 }
-
 
 
 /* =====================================================
@@ -1059,25 +824,18 @@ img {
 ===================================================== */
 
 .objectives {
-
     border-top: 1px solid var(--border);
-
 }
 
-
 .objectives-grid {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     gap: 100px;
-
 }
 
-
 .objectives h2 {
-
     margin-top: 20px;
 
     font-size: clamp(45px, 5vw, 70px);
@@ -1087,34 +845,23 @@ img {
     line-height: 0.95;
 
     letter-spacing: -0.06em;
-
 }
 
-
 .objectives h2 em {
-
     font-family: "Playfair Display", serif;
 
     font-weight: 500;
-
 }
-
 
 .objective-text {
-
     padding-top: 40px;
-
 }
 
-
 .objective-text p {
-
     margin-bottom: 25px;
 
     color: var(--text-muted);
-
 }
-
 
 
 /* =====================================================
@@ -1122,13 +869,11 @@ img {
 ===================================================== */
 
 .contact {
-
     min-height: 80vh;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 100px 40px;
@@ -1143,12 +888,9 @@ img {
             rgba(121, 214, 208, 0.08),
             transparent 55%
         );
-
 }
 
-
 .contact h2 {
-
     margin-top: 20px;
 
     font-size: clamp(65px, 10vw, 140px);
@@ -1158,37 +900,18 @@ img {
     letter-spacing: -0.07em;
 
     line-height: 0.85;
-
 }
 
-
 .contact h2 em {
-
     font-family: "Playfair Display", serif;
 
     font-weight: 500;
-
 }
-
-
-.contact-details {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin-top: 60px;
-
-}
-
 
 .contact-email {
-
     display: inline-block;
+
+    margin-top: 60px;
 
     padding-bottom: 5px;
 
@@ -1197,41 +920,15 @@ img {
     font-size: 20px;
 
     transition: 0.3s ease;
-
 }
 
-
 .contact-email:hover {
-
     color: var(--accent);
 
     border-color: var(--accent);
-
 }
-
-
-.contact-phone {
-
-    display: inline-block;
-
-    color: var(--text-muted);
-
-    font-size: 16px;
-
-    transition: 0.3s ease;
-
-}
-
-
-.contact-phone:hover {
-
-    color: var(--accent);
-
-}
-
 
 .social-links {
-
     display: flex;
 
     justify-content: center;
@@ -1239,12 +936,9 @@ img {
     gap: 30px;
 
     margin-top: 50px;
-
 }
 
-
 .social-links a {
-
     color: var(--text-muted);
 
     font-size: 11px;
@@ -1254,16 +948,11 @@ img {
     letter-spacing: 0.1em;
 
     transition: 0.3s ease;
-
 }
-
 
 .social-links a:hover {
-
     color: var(--accent);
-
 }
-
 
 
 /* =====================================================
@@ -1271,7 +960,6 @@ img {
 ===================================================== */
 
 footer {
-
     max-width: 1400px;
 
     margin: auto;
@@ -1289,16 +977,26 @@ footer {
     font-size: 10px;
 
     letter-spacing: 0.05em;
-
 }
-
 
 footer a:hover {
-
     color: var(--accent);
-
 }
 
+
+/* =====================================================
+   ACCESSIBILITÉ
+===================================================== */
+
+.filter-btn:focus-visible,
+.preview-link:focus-visible,
+.button:focus-visible,
+.nav-button:focus-visible,
+.navbar nav a:focus-visible {
+    outline: 1px solid var(--accent);
+
+    outline-offset: 4px;
+}
 
 
 /* =====================================================
@@ -1311,81 +1009,57 @@ footer a:hover {
         display: none;
     }
 
-
     .hero {
-
         grid-template-columns: 1fr;
 
         padding: 140px 30px 80px;
 
         gap: 50px;
-
     }
-
 
     .hero-image {
-
         height: 550px;
-
     }
-
 
     .scroll-indicator {
-
         display: none;
-
     }
-
 
     .section {
-
         padding: 100px 30px;
-
     }
 
-
     .about-grid {
-
         grid-template-columns: 1fr;
 
         gap: 60px;
-
     }
-
 
     .projects-grid {
-
-        grid-template-columns: repeat(2, 1fr);
-
+        grid-template-columns: 1fr;
     }
 
+    .project-card:nth-child(even) {
+        margin-top: 0;
+    }
 
     .timeline-item {
-
         grid-template-columns: 150px 1fr;
-
     }
 
-
     .objectives-grid {
-
         grid-template-columns: 1fr;
 
         gap: 30px;
-
     }
 
-
     .cv-container {
-
         flex-direction: column;
 
         align-items: flex-start;
-
     }
 
 }
-
 
 
 /* =====================================================
@@ -1395,219 +1069,140 @@ footer a:hover {
 @media (max-width: 600px) {
 
     .navbar {
-
         padding: 0 20px;
-
     }
 
-
     .nav-button {
-
         display: none;
-
     }
 
 
     .hero {
-
         padding: 130px 20px 60px;
-
     }
-
 
     .hero h1 {
-
         font-size: 76px;
-
     }
-
 
     .hero h1 span {
-
         margin-left: 30px;
-
     }
-
 
     .hero-description {
-
         margin-top: 40px;
-
     }
 
-
     .hero-buttons {
-
         flex-direction: column;
 
         align-items: stretch;
-
     }
 
-
     .hero-image {
-
         height: 420px;
-
     }
 
 
     .section {
-
         padding: 80px 20px;
-
     }
-
 
     .section-header {
-
         margin-bottom: 50px;
-
     }
 
-
     .section-header h2 {
-
         font-size: 52px;
-
     }
 
 
     .about-text .large-text {
-
         font-size: 20px;
-
     }
 
 
-    .projects-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 55px;
-
-    }
-
+    /* FILTRES */
 
     .project-filters {
+        gap: 8px;
 
         margin-bottom: 40px;
-
-        gap: 6px;
-
     }
 
-
-    .project-filter {
-
-        font-size: 11px;
-
-        padding: 9px 13px;
-
-    }
-
-
-    .project-overlay {
-
-        padding: 25px;
-
-    }
-
-
-    .project-preview p {
-
+    .filter-btn {
         font-size: 12px;
 
+        padding: 10px 17px;
     }
 
+
+    /* PROJETS */
+
+    .projects-grid {
+        gap: 60px;
+    }
+
+    .project-overlay {
+        padding: 25px;
+    }
+
+    .project-preview p {
+        font-size: 12px;
+    }
+
+
+    /* FORMATION */
 
     .timeline-item {
-
         display: block;
-
     }
-
 
     .timeline-date {
-
         margin-bottom: 20px;
-
     }
-
 
     .timeline-content h3 {
-
         font-size: 26px;
-
     }
 
+
+    /* CV */
 
     .cv h2 {
-
         font-size: 52px;
-
     }
 
 
-    .contact {
+    /* CONTACT */
 
+    .contact {
         min-height: 70vh;
 
         padding: 80px 20px;
-
     }
-
 
     .contact h2 {
-
         font-size: 65px;
-
     }
-
 
     .contact-email {
-
         font-size: 16px;
-
     }
-
-
-    .contact-phone {
-
-        font-size: 15px;
-
-    }
-
 
     .social-links {
-
         flex-wrap: wrap;
-
     }
 
 
-    footer {
+    /* FOOTER */
 
+    footer {
         padding: 25px 20px;
 
         flex-direction: column;
 
         gap: 10px;
-
     }
-
-}
-
-
-
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
-
-.preview-link:focus-visible {
-
-    outline: 1px solid var(--accent);
-
-    outline-offset: 4px;
 
 }
