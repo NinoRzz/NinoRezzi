@@ -1017,9 +1017,7 @@ footer a:hover {
 
     .project-category-header {
         grid-template-columns: 40px 1fr;
-
         column-gap: 15px;
-
         margin-bottom: 40px;
     }
 
@@ -1087,7 +1085,6 @@ footer a:hover {
 
     footer {
         padding: 25px 20px;
-
         flex-direction: column;
         gap: 10px;
     }
