@@ -1,1463 +1,1846 @@
-<!DOCTYPE html>
-<html lang="fr">
+/* =====================================================
+   VARIABLES
+===================================================== */
 
-<head>
+:root {
 
-    <meta charset="UTF-8">
+    --background: #10243d;
+    --background-dark: #0c1c30;
+    --background-light: #17304d;
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    --text: #f1f4f7;
+    --text-muted: #aeb9c6;
 
-    <title>Nino Rezzi — Portfolio</title>
+    --border: rgba(220, 230, 240, 0.15);
 
-    <meta
-        name="description"
-        content="Portfolio de Nino Rezzi — Audiovisuel, gestion de production et réalisation."
-    >
+    --accent: #79d6d0;
 
-    <link
-        rel="stylesheet"
-        href="style.css?v=20260907"
-    >
+    --container: 1240px;
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+}
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
-        rel="stylesheet"
-    >
+/* =====================================================
+   RESET
+===================================================== */
 
-</head>
+* {
 
+    margin: 0;
+    padding: 0;
 
-<body>
+    box-sizing: border-box;
 
+}
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
 
-<header class="navbar">
+html {
 
-    <a
-        href="#accueil"
-        class="logo"
-    >
-        NINO<span>.</span>
-    </a>
+    scroll-behavior: smooth;
 
+}
 
-    <nav>
 
-        <a href="#apropos">
-            À propos
-        </a>
+body {
 
-        <a href="#projets">
-            Projets
-        </a>
+    background: var(--background);
 
-        <a href="#formation">
-            Formation
-        </a>
+    color: var(--text);
 
-        <a href="#cv">
-            CV
-        </a>
+    font-family: "Inter", sans-serif;
 
-        <a href="#contact">
-            Contacts
-        </a>
+    line-height: 1.6;
 
-    </nav>
+    overflow-x: hidden;
 
+}
 
-    <a
-        href="#contact"
-        class="nav-button"
-    >
-        Me contacter
-    </a>
 
-</header>
+a {
 
+    color: inherit;
 
+    text-decoration: none;
 
-<main>
+}
 
 
-<!-- =====================================================
-     ACCUEIL
-===================================================== -->
+img {
 
-<section
-    id="accueil"
-    class="hero"
->
+    display: block;
 
-    <div class="hero-content">
+    width: 100%;
 
-        <p class="eyebrow">
-            AUDIOVISUEL · PRODUCTION · DOCUMENTAIRE
-        </p>
+}
 
 
-        <h1>
-            Nino<br>
-            <span>Rezzi</span>
-        </h1>
+button {
 
+    font: inherit;
 
-        <p class="hero-description">
+}
 
-            Formé à la gestion de production audiovisuelle,
-            je développe mon parcours à travers des projets,
-            des stages et des expériences professionnelles
-            dans différents environnements de production.
 
-        </p>
+::selection {
 
+    background: var(--accent);
 
-        <div class="hero-buttons">
+    color: var(--background-dark);
 
-            <a
-                href="#projets"
-                class="button button-primary"
-            >
-                Voir mes projets
-            </a>
+}
 
 
-            <a
-                href="#cv"
-                class="button button-secondary"
-            >
-                Mon CV
-            </a>
+/* =====================================================
+   SECTIONS
+===================================================== */
 
-        </div>
+.section {
 
-    </div>
+    position: relative;
 
+    max-width: var(--container);
 
+    margin: auto;
 
-    <div class="hero-image">
+    padding: 150px 40px;
 
-        <img
-            src="images/hero.jpg"
-            alt="Nino Rezzi"
-        >
+}
 
 
-        <div class="image-caption">
+.section-header {
 
-            <span>
-                PORTFOLIO
-            </span>
+    margin-bottom: 80px;
 
-            <span>
-                2026
-            </span>
+}
 
-        </div>
 
-    </div>
+.eyebrow {
 
+    color: var(--text-muted);
 
+    font-size: 11px;
 
-    <div class="scroll-indicator">
+    font-weight: 600;
 
-        <span></span>
+    letter-spacing: 0.18em;
 
-        SCROLL
+    text-transform: uppercase;
 
-    </div>
+}
 
-</section>
 
+.section-header h2 {
 
+    margin-top: 20px;
 
-<!-- =====================================================
-     À PROPOS
-===================================================== -->
+    font-size: clamp(48px, 6vw, 82px);
 
-<section
-    id="apropos"
-    class="section about"
->
+    font-weight: 500;
 
-    <div class="section-header">
+    letter-spacing: -0.05em;
 
-        <p class="eyebrow">
-            À PROPOS
-        </p>
+    line-height: 0.95;
 
+}
 
-        <h2>
 
-            Raconter le réel.<br>
+.section-header h2 em {
 
-            <em>
-                Donner du sens aux images.
-            </em>
+    font-family: "Playfair Display", serif;
 
-        </h2>
+    font-weight: 500;
 
-    </div>
+}
 
 
+.section-header > p:last-child {
 
-    <div class="about-grid">
+    max-width: 520px;
 
+    margin-top: 30px;
 
-        <div class="about-text">
+    color: var(--text-muted);
 
-            <p class="large-text">
+}
 
-                Je m'appelle Nino Rezzi et je me forme aux métiers
-                de l'audiovisuel, avec une spécialisation en
-                gestion de production.
 
-            </p>
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
+.navbar {
 
-            <p>
+    position: fixed;
 
-                Mon parcours m'a permis de découvrir différentes
-                étapes de fabrication d'un projet audiovisuel :
-                préparation, organisation, production, tournage
-                et post-production.
+    z-index: 100;
 
-            </p>
+    top: 0;
+    left: 0;
 
+    width: 100%;
 
-            <p>
+    height: 80px;
 
-                À travers mes différentes expériences, j'ai eu
-                l'occasion de travailler dans des environnements
-                professionnels variés, de la production télévisuelle
-                à la régie, en passant par des projets audiovisuels
-                indépendants.
+    display: flex;
 
-            </p>
+    align-items: center;
 
+    justify-content: space-between;
 
-            <p>
+    padding: 0 40px;
 
-                Je souhaite aujourd'hui continuer à développer
-                mon expérience professionnelle et participer à
-                des projets qui me ressemblent, notamment dans
-                les domaines du documentaire, du reportage,
-                de la nature et de l'animalier.
+    background: rgba(16, 36, 61, 0.88);
 
-            </p>
+    backdrop-filter: blur(15px);
 
-        </div>
+    border-bottom: 1px solid var(--border);
 
+}
 
 
-        <div class="about-info">
+.logo {
 
+    font-size: 18px;
 
-            <div class="info-item">
+    font-weight: 700;
 
-                <span>
-                    Formation
-                </span>
+    letter-spacing: 0.05em;
 
-                <strong>
-                    BTS Audiovisuel
-                </strong>
+}
 
-                <small>
-                    Gestion de production
-                </small>
 
-            </div>
+.logo span {
 
+    color: var(--accent);
 
+}
 
-            <div class="info-item">
 
-                <span>
-                    Domaines d'intérêt
-                </span>
+.navbar nav {
 
-                <strong>
-                    Documentaire
-                </strong>
+    display: flex;
 
-                <small>
-                    Reportage · Nature · Animalier
-                </small>
+    gap: 32px;
 
-            </div>
+}
 
 
+.navbar nav a {
 
-            <div class="info-item">
+    color: var(--text-muted);
 
-                <span>
-                    Profil
-                </span>
+    font-size: 12px;
 
-                <strong>
-                    Production audiovisuelle
-                </strong>
+    transition: color 0.3s ease;
 
-                <small>
-                    Organisation · Régie · Coordination
-                </small>
+}
 
-            </div>
 
+.navbar nav a:hover {
 
-        </div>
+    color: var(--text);
 
-    </div>
+}
 
-</section>
 
+.nav-button {
 
+    border: 1px solid var(--border);
 
-<!-- =====================================================
-     PROJETS
-===================================================== -->
+    padding: 10px 17px;
 
-<section
-    id="projets"
-    class="section projects"
->
+    font-size: 11px;
 
+    text-transform: uppercase;
 
-    <!-- =================================================
-         EN-TÊTE DES PROJETS
-    ================================================== -->
+    letter-spacing: 0.08em;
 
-    <div class="projects-heading">
+    transition: 0.3s ease;
 
+}
 
-        <div class="projects-title">
 
-            <p class="eyebrow">
-                MON TRAVAIL
-            </p>
+.nav-button:hover {
 
+    background: var(--text);
 
-            <div class="projects-title-row">
+    color: var(--background-dark);
 
-                <h2>
-                    Mes projets
-                </h2>
+}
 
-                <span class="projects-line"></span>
 
-            </div>
+/* =====================================================
+   HERO
+===================================================== */
 
-        </div>
+.hero {
 
+    position: relative;
 
+    min-height: 100vh;
 
-        <p class="projects-description">
+    max-width: 1400px;
 
-            Des plateaux de tournage aux événements en direct,
-            en passant par la production et la réalisation,
-            découvrez une sélection de mes expériences.
+    margin: auto;
 
-        </p>
+    padding: 160px 60px 80px;
 
-    </div>
+    display: grid;
 
+    grid-template-columns: 1fr 0.85fr;
 
+    align-items: center;
 
-    <!-- =================================================
-         FILTRES
-    ================================================== -->
+    gap: 80px;
 
-    <div class="projects-filters">
+}
 
 
-        <button
-            type="button"
-            class="project-filter active"
-            data-filter="all"
-        >
-            Tous
-        </button>
+.hero-content {
 
+    position: relative;
 
-        <button
-            type="button"
-            class="project-filter"
-            data-filter="stagiaire"
-        >
-            Stagiaire
-        </button>
+    z-index: 2;
 
+}
 
-        <button
-            type="button"
-            class="project-filter"
-            data-filter="production"
-        >
-            Assistant de production
-        </button>
 
+.hero h1 {
 
-        <button
-            type="button"
-            class="project-filter"
-            data-filter="realisation"
-        >
-            Réalisateur
-        </button>
+    margin-top: 25px;
 
+    font-size: clamp(80px, 12vw, 170px);
 
-    </div>
+    font-weight: 600;
 
+    letter-spacing: -0.08em;
 
+    line-height: 0.78;
 
-    <!-- =================================================
-         GRILLE DES PROJETS
-    ================================================== -->
+}
 
-    <div class="projects-grid">
 
+.hero h1 span {
 
-        <!-- =================================================
-             01 — DIBBOUK
-        ================================================== -->
+    display: inline-block;
 
-        <article
-            class="project-card"
-            data-role="stagiaire"
-        >
+    margin-left: 70px;
 
-            <div class="project-image">
+    font-family: "Playfair Display", serif;
 
-                <img
-                    src="images/dibbouk.jpg"
-                    alt="Le Dibbouk, fantôme du monde disparu"
-                >
+    font-weight: 500;
 
+}
 
-                <div class="project-overlay">
 
-                    <div class="project-preview">
+.hero-description {
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+    max-width: 470px;
 
+    margin-top: 55px;
 
-                        <p>
+    color: var(--text-muted);
 
-                            Gestion de l'équipe technique,
-                            organisation et programmation
-                            du tournage.
+    font-size: 16px;
 
-                        </p>
+    line-height: 1.8;
 
+}
 
-                        <a
-                            href="projets/dibbouk.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
 
-                    </div>
+.hero-buttons {
 
-                </div>
+    display: flex;
 
-            </div>
+    gap: 15px;
 
+    margin-top: 40px;
 
+}
 
-            <div class="project-info">
 
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
+/* =====================================================
+   BUTTONS
+===================================================== */
 
+.button {
 
-                <h3>
-                    Le Dibbouk, fantôme du monde disparu
-                </h3>
+    display: inline-flex;
 
+    align-items: center;
 
-                <a
-                    href="projets/dibbouk.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
+    justify-content: center;
 
-            </div>
+    min-height: 52px;
 
-        </article>
+    padding: 0 25px;
 
+    font-size: 11px;
 
+    font-weight: 600;
 
-        <!-- =================================================
-             02 — ROLAND GARROS
-        ================================================== -->
+    letter-spacing: 0.08em;
 
-        <article
-            class="project-card"
-            data-role="stagiaire"
-        >
+    text-transform: uppercase;
 
-            <div class="project-image">
+    transition: all 0.3s ease;
 
-                <img
-                    src="images/roland-garros.jpg"
-                    alt="Roland Garros 2025"
-                >
+}
 
 
-                <div class="project-overlay">
+.button-primary {
 
-                    <div class="project-preview">
+    background: var(--text);
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+    color: var(--background-dark);
 
+}
 
-                        <p>
 
-                            Installation du car régie et du plateau,
-                            visite des installations, planification TV,
-                            coordination antenne et publicité.
+.button-primary:hover {
 
-                        </p>
+    background: var(--accent);
 
+    transform: translateY(-2px);
 
-                        <a
-                            href="projets/roland-garros.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
+}
 
-                    </div>
 
-                </div>
+.button-secondary {
 
-            </div>
+    border: 1px solid var(--border);
 
+}
 
 
-            <div class="project-info">
+.button-secondary:hover {
 
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
+    border-color: var(--text);
 
+    transform: translateY(-2px);
 
-                <h3>
-                    Roland Garros 2025
-                </h3>
+}
 
 
-                <a
-                    href="projets/roland-garros.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
+/* =====================================================
+   HERO IMAGE
+===================================================== */
 
-            </div>
+.hero-image {
 
-        </article>
+    position: relative;
 
+    height: 680px;
 
+    overflow: hidden;
 
-        <!-- =================================================
-             03 — TOUR DE FRANCE
-        ================================================== -->
+}
 
-        <article
-            class="project-card"
-            data-role="stagiaire"
-        >
 
-            <div class="project-image">
+.hero-image img {
 
-                <img
-                    src="images/tour-de-france.jpg"
-                    alt="Tour de France 2025"
-                >
+    width: 100%;
 
+    height: 100%;
 
-                <div class="project-overlay">
+    object-fit: cover;
 
-                    <div class="project-preview">
+    filter: saturate(0.85);
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+    transition: transform 0.8s ease;
 
+}
 
-                        <p>
 
-                            Suivi des accréditations de l'équipe
-                            technique et des journalistes sur
-                            l'ensemble du Tour de France.
+.hero-image:hover img {
 
-                        </p>
+    transform: scale(1.03);
 
+}
 
-                        <a
-                            href="projets/tour-de-france.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
 
-                    </div>
+.image-caption {
 
-                </div>
+    position: absolute;
 
-            </div>
+    z-index: 2;
 
+    bottom: 20px;
 
+    left: 20px;
 
-            <div class="project-info">
+    right: 20px;
 
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
+    display: flex;
 
+    justify-content: space-between;
 
-                <h3>
-                    Tour de France 2025
-                </h3>
+    font-size: 10px;
 
+    letter-spacing: 0.1em;
 
-                <a
-                    href="projets/tour-de-france.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
+}
 
-            </div>
 
-        </article>
+.scroll-indicator {
 
+    position: absolute;
 
+    bottom: 35px;
 
-        <!-- =================================================
-             04 — 14 JUILLET
-        ================================================== -->
+    left: 60px;
 
-        <article
-            class="project-card"
-            data-role="stagiaire"
-        >
+    display: flex;
 
-            <div class="project-image">
+    align-items: center;
 
-                <img
-                    src="images/14-juillet.jpg"
-                    alt="14 juillet 2025"
-                >
+    gap: 12px;
 
+    color: var(--text-muted);
 
-                <div class="project-overlay">
+    font-size: 9px;
 
-                    <div class="project-preview">
+    letter-spacing: 0.15em;
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+}
 
 
-                        <p>
+.scroll-indicator span {
 
-                            Planification des repérages et préparation
-                            technique du dispositif destiné à obtenir
-                            les images aériennes du défilé.
+    width: 35px;
 
-                        </p>
+    height: 1px;
 
+    background: var(--text-muted);
 
-                        <a
-                            href="projets/14-juillet.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
+}
 
-                    </div>
 
-                </div>
+/* =====================================================
+   ABOUT
+===================================================== */
 
-            </div>
+.about {
 
+    border-top: 1px solid var(--border);
 
+}
 
-            <div class="project-info">
 
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
+.about-grid {
 
+    display: grid;
 
-                <h3>
-                    14 juillet 2025
-                </h3>
+    grid-template-columns: 1.2fr 0.8fr;
 
+    gap: 120px;
 
-                <a
-                    href="projets/14-juillet.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
+}
 
-            </div>
 
-        </article>
+.about-text {
 
+    max-width: 650px;
 
+}
 
-        <!-- =================================================
-             05 — RÉGIE
-        ================================================== -->
 
-        <article
-            class="project-card"
-            data-role="stagiaire"
-        >
+.about-text p {
 
-            <div class="project-image">
+    margin-bottom: 25px;
 
-                <img
-                    src="images/regie.jpg"
-                    alt="Expérience en régie"
-                >
+    color: var(--text-muted);
 
+}
 
-                <div class="project-overlay">
 
-                    <div class="project-preview">
+.about-text .large-text {
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+    color: var(--text);
 
+    font-size: 24px;
 
-                        <p>
+    line-height: 1.5;
 
-                            Installation des caméras à distance,
-                            cadrage en direct et participation
-                            à la réalisation avec le réalisateur.
+}
 
-                        </p>
 
+.about-info {
 
-                        <a
-                            href="projets/regie.html"
-                            class="preview-link"
-                        >
-                            Voir l'expérience →
-                        </a>
+    border-top: 1px solid var(--border);
 
-                    </div>
+}
 
-                </div>
 
-            </div>
+.info-item {
 
+    padding: 25px 0;
 
+    border-bottom: 1px solid var(--border);
 
-            <div class="project-info">
+}
 
-                <span class="project-category">
-                    STAGIAIRE
-                </span>
 
+.info-item span,
+.info-item small {
 
-                <h3>
-                    Expérience en régie
-                </h3>
+    display: block;
 
+    color: var(--text-muted);
 
-                <a
-                    href="projets/regie.html"
-                    class="project-link"
-                >
-                    Voir l'expérience →
-                </a>
+    font-size: 11px;
 
-            </div>
+}
 
-        </article>
 
+.info-item strong {
 
+    display: block;
 
-        <!-- =================================================
-             06 — PCP
-        ================================================== -->
+    margin: 5px 0;
 
-        <article
-            class="project-card"
-            data-role="production"
-        >
+    font-size: 16px;
 
-            <div class="project-image">
+    font-weight: 500;
 
-                <img
-                    src="images/pcp-relation.jpg"
-                    alt="PCP — In relation to Whom"
-                >
+}
 
 
-                <div class="project-overlay">
+/* =====================================================
+   PROJETS
+===================================================== */
 
-                    <div class="project-preview">
+.projects {
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+    border-top: 1px solid var(--border);
 
+}
 
-                        <p>
 
-                            Organisation, suivi social et juridique,
-                            gestion financière et suivi technique.
+/* -----------------------------------------------------
+   EN-TÊTE
+----------------------------------------------------- */
 
-                        </p>
+.projects-heading {
 
+    display: grid;
 
-                        <a
-                            href="projets/pcp-relation.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(280px, 0.8fr);
 
-                    </div>
+    gap: 60px;
 
-                </div>
+    align-items: end;
 
-            </div>
+    margin-bottom: 42px;
 
+}
 
 
-            <div class="project-info">
+.projects-title {
 
-                <span class="project-category">
-                    ASSISTANT DE PRODUCTION
-                </span>
+    min-width: 0;
 
+}
 
-                <h3>
-                    PCP — In relation to Whom
-                </h3>
 
+.projects-title .eyebrow {
 
-                <a
-                    href="projets/pcp-relation.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
+    margin-bottom: 16px;
 
-            </div>
+}
 
-        </article>
 
+.projects-title-row {
 
+    display: flex;
 
-        <!-- =================================================
-             07 — JT
-        ================================================== -->
+    align-items: center;
 
-        <article
-            class="project-card"
-            data-role="realisation"
-        >
+    gap: 42px;
 
-            <div class="project-image">
+}
 
-                <img
-                    src="images/jt-direct.jpg"
-                    alt="Réalisation en direct d'un journal télévisé"
-                >
 
+.projects-title-row h2 {
 
-                <div class="project-overlay">
+    margin: 0;
 
-                    <div class="project-preview">
+    white-space: nowrap;
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+    font-family: "Playfair Display", serif;
 
+    font-size: clamp(54px, 5vw, 76px);
 
-                        <p>
+    font-weight: 400;
 
-                            Réalisation du plateau du JT en direct
-                            et création artistique du programme :
-                            couleurs, typographie et choix techniques.
+    line-height: 0.95;
 
-                        </p>
+    letter-spacing: -0.045em;
 
+}
 
-                        <a
-                            href="projets/jt-direct.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
 
-                    </div>
+.projects-line {
 
-                </div>
+    height: 1px;
 
-            </div>
+    flex: 1;
 
+    min-width: 80px;
 
+    background: var(--border);
 
-            <div class="project-info">
+}
 
-                <span class="project-category">
-                    RÉALISATEUR
-                </span>
 
+.projects-description {
 
-                <h3>
-                    JT en direct
-                </h3>
+    max-width: 410px;
 
+    margin: 0 0 4px auto;
 
-                <a
-                    href="projets/jt-direct.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
+    color: var(--text-muted);
 
-            </div>
+    font-size: 15px;
 
-        </article>
+    line-height: 1.65;
 
+}
 
 
-        <!-- =================================================
-             08 — JPO
-        ================================================== -->
+/* -----------------------------------------------------
+   FILTRES
+----------------------------------------------------- */
 
-        <article
-            class="project-card"
-            data-role="realisation"
-        >
+.projects-filters {
 
-            <div class="project-image">
+    display: flex;
 
-                <img
-                    src="images/jpo.jpg"
-                    alt="Réalisation en direct des portes ouvertes"
-                >
+    align-items: center;
 
+    flex-wrap: wrap;
 
-                <div class="project-overlay">
+    gap: 12px 32px;
 
-                    <div class="project-preview">
+    margin-bottom: 28px;
 
-                        <span class="preview-label">
-                            MA CONTRIBUTION
-                        </span>
+}
 
 
-                        <p>
+.project-filter {
 
-                            Réalisation du plateau JPO en direct
-                            et création artistique autour
-                            de la diffusion.
+    appearance: none;
 
-                        </p>
+    border: 0;
 
+    background: transparent;
 
-                        <a
-                            href="projets/jpo.html"
-                            class="preview-link"
-                        >
-                            Voir le projet →
-                        </a>
+    color: var(--text-muted);
 
-                    </div>
+    padding: 10px 0;
 
-                </div>
+    font-family: "Inter", sans-serif;
 
-            </div>
+    font-size: 14px;
 
+    cursor: pointer;
 
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        padding 0.25s ease;
 
-            <div class="project-info">
+}
 
-                <span class="project-category">
-                    RÉALISATEUR
-                </span>
 
+.project-filter:hover {
 
-                <h3>
-                    Portes ouvertes du BTS
-                </h3>
+    color: var(--text);
 
+}
 
-                <a
-                    href="projets/jpo.html"
-                    class="project-link"
-                >
-                    Voir le projet →
-                </a>
 
-            </div>
+.project-filter.active {
 
-        </article>
+    color: var(--background);
 
+    background: var(--text);
 
-    </div>
+    padding: 10px 19px;
 
-</section>
+    border-radius: 999px;
 
+}
 
 
-<!-- =====================================================
-     FORMATION
-===================================================== -->
+/* -----------------------------------------------------
+   GRILLE
+----------------------------------------------------- */
 
-<section
-    id="formation"
-    class="section formation"
->
+.projects .projects-grid {
 
+    display: grid;
 
-    <div class="section-header">
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
 
-        <p class="eyebrow">
-            PARCOURS
-        </p>
+    gap: 34px 18px;
 
+    width: 100%;
 
-        <h2>
-            Formation
-        </h2>
+}
 
-    </div>
 
+.projects .project-card {
 
+    min-width: 0;
 
-    <div class="timeline">
+    display: block;
 
+    background: transparent;
 
-        <!-- BTS -->
+    border: 0;
 
-        <div class="timeline-item">
+    padding: 0;
 
-            <div class="timeline-date">
-                2024 — 2026
-            </div>
+}
 
 
-            <div class="timeline-content">
+.projects .project-card[hidden] {
 
-                <span>
-                    FORMATION
-                </span>
+    display: none;
 
+}
 
-                <h3>
-                    BTS Audiovisuel — Gestion de production
-                </h3>
 
+/* -----------------------------------------------------
+   IMAGES
+----------------------------------------------------- */
 
-                <p>
+.projects .project-image {
 
-                    Formation spécialisée dans la gestion de
-                    production audiovisuelle, permettant de
-                    comprendre et de participer aux différentes
-                    étapes de fabrication d'un projet, de la
-                    préparation à la post-production.
+    position: relative;
 
-                </p>
+    width: 100%;
 
-            </div>
+    aspect-ratio: 1.48 / 1;
 
-        </div>
+    overflow: hidden;
 
+    border-radius: 5px;
 
+    border: 1px solid var(--border);
 
-        <!-- CPGE -->
+    background: var(--background-light);
 
-        <div class="timeline-item">
+    cursor: pointer;
 
-            <div class="timeline-date">
-                2022 — 2024
-            </div>
+}
 
 
-            <div class="timeline-content">
+.projects .project-image img {
 
-                <span>
-                    FORMATION
-                </span>
+    display: block;
 
+    width: 100%;
 
-                <h3>
-                    CPGE ECT
-                </h3>
+    height: 100%;
 
+    object-fit: cover;
 
-                <p>
+    transition:
+        transform 0.6s
+        cubic-bezier(0.22, 1, 0.36, 1),
 
-                    Classe préparatoire économique et commerciale
-                    voie technologique. Formation intensive de deux
-                    années axée notamment sur l'économie, le management,
-                    les mathématiques, les langues et la culture générale,
-                    préparant aux concours des écoles de commerce.
+        filter 0.4s ease;
 
-                </p>
+}
 
-            </div>
 
-        </div>
+.projects .project-card:hover
+.projects .project-image img {
 
+    transform: scale(1.035);
 
+}
 
-        <!-- BAC STMG -->
 
-        <div class="timeline-item">
+/* -----------------------------------------------------
+   OVERLAY
+----------------------------------------------------- */
 
-            <div class="timeline-date">
-                2022
-            </div>
+.projects .project-overlay {
 
+    position: absolute;
 
-            <div class="timeline-content">
+    inset: 0;
 
-                <span>
-                    DIPLÔME
-                </span>
+    display: flex;
 
+    align-items: flex-end;
 
-                <h3>
-                    Baccalauréat STMG — Mention Bien
-                </h3>
+    padding: 22px;
 
-
-                <p>
-
-                    Obtention du baccalauréat Sciences et Technologies
-                    du Management et de la Gestion, avec mention Bien.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CV
-===================================================== -->
-
-<section
-    id="cv"
-    class="section cv"
->
-
-
-    <div class="cv-container">
-
-
-        <div>
-
-            <p class="eyebrow">
-                MON PARCOURS
-            </p>
-
-
-            <h2>
-                Mon CV
-            </h2>
-
-
-            <p>
-
-                Retrouvez mon parcours, mes expériences
-                professionnelles, ma formation et mes compétences
-                dans mon CV.
-
-            </p>
-
-        </div>
-
-
-
-        <a
-            href="documents/CV-Nino-Rezzi.pdf"
-            target="_blank"
-            class="button button-primary"
-        >
-            Télécharger mon CV →
-        </a>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     OBJECTIFS
-===================================================== -->
-
-<section class="section objectives">
-
-
-    <div class="objectives-grid">
-
-
-        <div>
-
-            <p class="eyebrow">
-                LA SUITE
-            </p>
-
-
-            <h2>
-
-                Construire la suite
-                <em>de mon parcours.</em>
-
-            </h2>
-
-        </div>
-
-
-
-        <div class="objective-text">
-
-            <p>
-
-                Je souhaite aujourd'hui poursuivre mon parcours
-                professionnel dans l'audiovisuel afin de continuer
-                à apprendre au contact de professionnels et de
-                participer à des projets concrets.
-
-            </p>
-
-
-            <p>
-
-                Mon objectif est de développer mon expérience
-                dans la production audiovisuelle et de construire
-                progressivement mon parcours autour de projets
-                qui m'intéressent, notamment le documentaire,
-                le reportage, la nature et le vivant.
-
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section
-    id="contact"
-    class="contact"
->
-
-
-    <div class="contact-content">
-
-
-        <p class="eyebrow">
-            CONTACT
-        </p>
-
-
-        <h2>
-
-            Un projet ?<br>
-
-            <em>
-                Parlons-en.
-            </em>
-
-        </h2>
-
-
-        <a
-            href="mailto:Ninorezzi10@outlook.fr"
-            class="contact-email"
-        >
-            Ninorezzi10@outlook.fr
-        </a>
-
-
-        <div class="contact-details">
-
-            <a href="tel:+33781855009">
-                07 81 85 50 09
-            </a>
-
-            <a
-                href="https://www.instagram.com/ninorezzi/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                @ninorezzi
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <span>
-        © 2026 Nino Rezzi
-    </span>
-
-
-    <span>
-        Portfolio audiovisuel
-    </span>
-
-
-    <a href="#accueil">
-        Retour en haut ↑
-    </a>
-
-</footer>
-
-
-
-<!-- =====================================================
-     FILTRES PROJETS
-===================================================== -->
-
-<script>
-
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
-
-        const filters =
-            document.querySelectorAll(
-                ".project-filter"
-            );
-
-        const cards =
-            document.querySelectorAll(
-                ".project-card"
-            );
-
-
-        filters.forEach(
-            (filter) => {
-
-                filter.addEventListener(
-                    "click",
-                    () => {
-
-                        const selectedFilter =
-                            filter.dataset.filter;
-
-
-                        filters.forEach(
-                            (item) => {
-
-                                item.classList.remove(
-                                    "active"
-                                );
-
-                            }
-                        );
-
-
-                        filter.classList.add(
-                            "active"
-                        );
-
-
-                        cards.forEach(
-                            (card) => {
-
-                                const role =
-                                    card.dataset.role;
-
-
-                                if (
-                                    selectedFilter === "all" ||
-                                    role === selectedFilter
-                                ) {
-
-                                    card.hidden = false;
-
-                                } else {
-
-                                    card.hidden = true;
-
-                                }
-
-                            }
-                        );
-
-                    }
-                );
-
-            }
+    background:
+        linear-gradient(
+            to top,
+            rgba(12, 28, 48, 0.96) 0%,
+            rgba(12, 28, 48, 0.78) 42%,
+            rgba(12, 28, 48, 0.05) 100%
         );
 
+    opacity: 0;
+
+    transition: opacity 0.35s ease;
+
+}
+
+
+.projects .project-card:hover
+.projects .project-overlay,
+
+.projects .project-card:focus-within
+.projects .project-overlay {
+
+    opacity: 1;
+
+}
+
+
+.projects .project-preview {
+
+    transform: translateY(12px);
+
+    transition:
+        transform 0.4s ease;
+
+}
+
+
+.projects .project-card:hover
+.projects .project-preview,
+
+.projects .project-card:focus-within
+.projects .project-preview {
+
+    transform: translateY(0);
+
+}
+
+
+.projects .preview-label {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--accent);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+}
+
+
+.projects .project-preview p {
+
+    max-width: 330px;
+
+    margin: 0 0 15px;
+
+    color: var(--text);
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+}
+
+
+.projects .preview-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    color: var(--text);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid
+        rgba(241, 244, 247, 0.5);
+
+    padding-bottom: 3px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.projects .preview-link:hover {
+
+    color: var(--accent);
+
+    border-color: var(--accent);
+
+}
+
+
+/* -----------------------------------------------------
+   INFORMATIONS
+----------------------------------------------------- */
+
+.projects .project-info {
+
+    padding-top: 15px;
+
+}
+
+
+.projects .project-category {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+    line-height: 1.3;
+
+}
+
+
+.projects .project-info h3 {
+
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.35;
+
+    letter-spacing: -0.01em;
+
+}
+
+
+.projects .project-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 11px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    padding-bottom: 3px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.projects .project-link:hover {
+
+    color: var(--text);
+
+    border-color: var(--text);
+
+}
+
+
+/* =====================================================
+   FORMATION / TIMELINE
+===================================================== */
+
+.formation {
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.timeline {
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.timeline-item {
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    padding: 50px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.timeline-date {
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+}
+
+
+.timeline-content > span {
+
+    color: var(--accent);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.15em;
+
+}
+
+
+.timeline-content h3 {
+
+    margin-top: 8px;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+
+}
+
+
+.timeline-content p {
+
+    max-width: 700px;
+
+    margin-top: 15px;
+
+    color: var(--text-muted);
+
+}
+
+
+/* =====================================================
+   CV
+===================================================== */
+
+.cv {
+
+    max-width: none;
+
+    background: var(--background);
+
+}
+
+
+.cv-container {
+
+    max-width: 1090px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+}
+
+
+.cv h2 {
+
+    margin-top: 15px;
+
+    font-size: 65px;
+
+    letter-spacing: -0.05em;
+
+}
+
+
+.cv p:last-of-type {
+
+    max-width: 450px;
+
+    margin-top: 20px;
+
+    color: var(--text-muted);
+
+}
+
+
+/* =====================================================
+   OBJECTIFS
+===================================================== */
+
+.objectives {
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.objectives-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+}
+
+
+.objectives h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.06em;
+
+}
+
+
+.objectives h2 em {
+
+    font-family: "Playfair Display", serif;
+
+    font-weight: 500;
+
+}
+
+
+.objective-text {
+
+    padding-top: 40px;
+
+}
+
+
+.objective-text p {
+
+    margin-bottom: 25px;
+
+    color: var(--text-muted);
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 100px 40px;
+
+    text-align: center;
+
+    border-top: 1px solid var(--border);
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(121, 214, 208, 0.08),
+            transparent 55%
+        );
+
+}
+
+
+.contact h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(65px, 10vw, 140px);
+
+    font-weight: 500;
+
+    letter-spacing: -0.07em;
+
+    line-height: 0.85;
+
+}
+
+
+.contact h2 em {
+
+    font-family: "Playfair Display", serif;
+
+    font-weight: 500;
+
+}
+
+
+.contact-email {
+
+    display: inline-block;
+
+    margin-top: 60px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid var(--text);
+
+    font-size: 20px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.contact-email:hover {
+
+    color: var(--accent);
+
+    border-color: var(--accent);
+
+}
+
+
+.contact-details {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    margin-top: 35px;
+
+}
+
+
+.contact-details a {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    letter-spacing: 0.04em;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.contact-details a:hover {
+
+    color: var(--accent);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 30px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+
+    letter-spacing: 0.05em;
+
+}
+
+
+footer a:hover {
+
+    color: var(--accent);
+
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.project-filter:focus-visible,
+.project-link:focus-visible,
+.preview-link:focus-visible,
+.nav-button:focus-visible,
+.button:focus-visible {
+
+    outline: 1px solid var(--accent);
+
+    outline-offset: 4px;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+
+    .navbar nav {
+
+        display: none;
+
     }
-);
-
-</script>
 
 
-</body>
+    .hero {
 
-</html>
+        grid-template-columns: 1fr;
+
+        padding: 140px 30px 80px;
+
+        gap: 50px;
+
+    }
+
+
+    .hero-image {
+
+        height: 550px;
+
+    }
+
+
+    .scroll-indicator {
+
+        display: none;
+
+    }
+
+
+    .section {
+
+        padding: 100px 30px;
+
+    }
+
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+
+    /* Projets */
+
+    .projects-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .projects-description {
+
+        margin: 0;
+
+        max-width: 550px;
+
+    }
+
+
+    .projects .projects-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 45px 20px;
+
+    }
+
+
+    .timeline-item {
+
+        grid-template-columns: 150px 1fr;
+
+    }
+
+
+    .objectives-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .cv-container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    .navbar {
+
+        padding: 0 20px;
+
+    }
+
+
+    .nav-button {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        padding: 130px 20px 60px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 76px;
+
+    }
+
+
+    .hero h1 span {
+
+        margin-left: 30px;
+
+    }
+
+
+    .hero-description {
+
+        margin-top: 40px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .hero-image {
+
+        height: 420px;
+
+    }
+
+
+    .section {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .section-header {
+
+        margin-bottom: 50px;
+
+    }
+
+
+    .section-header h2 {
+
+        font-size: 52px;
+
+    }
+
+
+    .about-text .large-text {
+
+        font-size: 20px;
+
+    }
+
+
+    /* ---------------------------------------------
+       PROJETS MOBILE
+    --------------------------------------------- */
+
+    .projects-heading {
+
+        gap: 28px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .projects-title .eyebrow {
+
+        margin-bottom: 12px;
+
+    }
+
+
+    .projects-title-row {
+
+        gap: 18px;
+
+    }
+
+
+    .projects-title-row h2 {
+
+        font-size: 50px;
+
+    }
+
+
+    .projects-line {
+
+        min-width: 25px;
+
+    }
+
+
+    .projects-description {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+    }
+
+
+    .projects-filters {
+
+        gap: 7px 20px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .project-filter {
+
+        font-size: 12px;
+
+    }
+
+
+    .project-filter.active {
+
+        padding: 9px 15px;
+
+    }
+
+
+    .projects .projects-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .projects .project-image {
+
+        aspect-ratio: 1.45 / 1;
+
+    }
+
+
+    /*
+       Sur mobile, il n'y a pas de vrai hover.
+       Le contenu reste accessible au focus / toucher.
+    */
+
+    .projects .project-overlay {
+
+        opacity: 0;
+
+    }
+
+
+    .projects .project-card:active
+    .project-overlay,
+
+    .projects .project-card:focus-within
+    .project-overlay {
+
+        opacity: 1;
+
+    }
+
+
+    /* ---------------------------------------------
+       FORMATION
+    --------------------------------------------- */
+
+    .timeline-item {
+
+        display: block;
+
+    }
+
+
+    .timeline-date {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .timeline-content h3 {
+
+        font-size: 26px;
+
+    }
+
+
+    /* ---------------------------------------------
+       CV
+    --------------------------------------------- */
+
+    .cv h2 {
+
+        font-size: 52px;
+
+    }
+
+
+    /* ---------------------------------------------
+       CONTACT
+    --------------------------------------------- */
+
+    .contact {
+
+        min-height: 70vh;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .contact h2 {
+
+        font-size: 65px;
+
+    }
+
+
+    .contact-email {
+
+        font-size: 16px;
+
+    }
+
+
+    .contact-details {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    /* ---------------------------------------------
+       FOOTER
+    --------------------------------------------- */
+
+    footer {
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
