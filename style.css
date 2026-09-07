@@ -835,8 +835,6 @@ button {
 
     background: var(--background-light);
 
-    cursor: pointer;
-
 }
 
 
@@ -860,7 +858,7 @@ button {
 
 
 .projects .project-card:hover
-.projects .project-image img {
+.project-image img {
 
     transform: scale(1.035);
 
@@ -899,10 +897,10 @@ button {
 
 
 .projects .project-card:hover
-.projects .project-overlay,
+.project-overlay,
 
 .projects .project-card:focus-within
-.projects .project-overlay {
+.project-overlay {
 
     opacity: 1;
 
@@ -920,10 +918,10 @@ button {
 
 
 .projects .project-card:hover
-.projects .project-preview,
+.project-preview,
 
 .projects .project-card:focus-within
-.projects .project-preview {
+.project-preview {
 
     transform: translateY(0);
 
@@ -997,7 +995,7 @@ button {
 
 
 /* -----------------------------------------------------
-   INFORMATIONS
+   INFORMATIONS SOUS LES IMAGES
 ----------------------------------------------------- */
 
 .projects .project-info {
@@ -1082,7 +1080,7 @@ button {
 
 
 /* =====================================================
-   FORMATION / TIMELINE
+   FORMATION
 ===================================================== */
 
 .formation {
@@ -1495,7 +1493,9 @@ footer a:hover {
     }
 
 
-    /* Projets */
+    /* ---------------------------------------------
+       PROJETS
+    --------------------------------------------- */
 
     .projects-heading {
 
@@ -1525,12 +1525,20 @@ footer a:hover {
     }
 
 
+    /* ---------------------------------------------
+       FORMATION
+    --------------------------------------------- */
+
     .timeline-item {
 
         grid-template-columns: 150px 1fr;
 
     }
 
+
+    /* ---------------------------------------------
+       OBJECTIFS
+    --------------------------------------------- */
 
     .objectives-grid {
 
@@ -1540,6 +1548,10 @@ footer a:hover {
 
     }
 
+
+    /* ---------------------------------------------
+       CV
+    --------------------------------------------- */
 
     .cv-container {
 
@@ -1646,7 +1658,7 @@ footer a:hover {
 
 
     /* ---------------------------------------------
-       PROJETS MOBILE
+       PROJETS
     --------------------------------------------- */
 
     .projects-heading {
@@ -1733,11 +1745,6 @@ footer a:hover {
 
     }
 
-
-    /*
-       Sur mobile, il n'y a pas de vrai hover.
-       Le contenu reste accessible au focus / toucher.
-    */
 
     .projects .project-overlay {
 
